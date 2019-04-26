@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>galery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top:3.5%;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color:purple;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: green;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="profile.html">Profil</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="sidenav">
+  <a href="login.html">Login</a>
+  <a href="artikel.html">Artikel</a>
+  <a href="#">Galery</a>
+</div>
+
+	<style>
+		div.galery {
+			margin: 50px;
+			border:1px solid #ccc;
+			float: right;
+			width: 180px;
+		}
+		div.galery:hover {
+			border: 1px solid #777;
+		}
+
+		div.galery img {
+			width: 100%;
+			height: auto;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+
+		.tulisan_justify{
+		text-align: justify;
+		}
+
+	
+	</style>
+</head>
+<body>
+
+	<div class="galery" >
+		<a target="_blank" href="image/css.jpg"> <img src="image/css.jpg" alt="css" width="600" height="400"></a>
+
+	<div class="desc"> <p class="tulisan_justify">Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam</div></p>
+	</div>
+
+	<div class="galery">
+		<a target="_blank" href="image/html.png"><img src="image/html.png" alt="html" width="600" height="400"></a>
+		<div class="desc"><p class="tulisan_justify">Hypertext Markup Language (HTML) adalah sebuah bahasa markah yang digunakan untuk membuat sebuah halaman web.</div></p>
+	</div>
+
+	<div class="galery">
+		<a target="_blank" href="image/javascript.png"><img src="image/javascript.png" alt="java" width="600" height="400"></a>
+	<div class="desc"> 	<p class="tulisan_justify">JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer (IE), Mozilla Firefox, Netscape dan Opera</div></p>
+	</div>
+
+	<div class="galery">
+		<a target="_blank" href="image/boostrap.png"><img src="image/boostrap.png" alt="boostrap" width="600" height="400"></a>
+		<div class="desc"><p class="tulisan_justify">Bootstrap adalah sebuah framework css yang dapat digunakan untuk mempermudah membangun tampilan web</div></p>
+	</div>
+
+</body>
+</html>

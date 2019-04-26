@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top:3.5%;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color:purple;
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: green;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+       .login{
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+            }
+            .kotak{
+                width: 350px;
+                background: navy;
+                margin: 80px auto;
+                padding: 30px 20px;
+            }
+            label{ 
+                font-size: 11pt;
+                color: white;
+            }
+            .form{
+                box-sizing : border-box;
+                width: 100%;
+                padding: 5px;
+                font-size: 11pt;
+                margin-bottom: 20px;
+                color: black;
+            }
+            .tombol{
+                background: white;
+                color: black;
+                font-size: 11pt;
+                width: 100%;
+                border: none;
+                border-radius: 3px;
+                padding: 10px 20px;
+            }
+            .link{
+                color: black;
+                text-decoration: none;
+                font-size: 10pt;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="profile.html">Profil</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div class="sidenav">
+  <a href="login.html">Login</a>
+  <a href="artikel.html">Artikel</a>
+  <a href="galery.html">Galery</a>
+</div>
+
+    <div class="kotak">
+        <p class="login">LOGIN</p>
+        <form>
+            <label>Username or Email</label>
+            <input type="text" name="username" class="form" placeholder="Username atau email">
+            <label>Password</label>
+            <input type="text" name="password" class="form" placeholder="Password"> 
+            <div class="g-recaptcha" data-sitekey="isi_dengan_site_key_nya"></div>  
+            <br>      
+            <input type="submit" class="tombol" value="LOGIN">
+            <br>
+            <br>
+            <center>
+            <a class="link" href="baru.html">kembali</a>
+            </center>
+        </form>
+  </div>
+    
+</html>
